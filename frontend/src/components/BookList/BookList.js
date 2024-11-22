@@ -25,7 +25,7 @@ const BookList = () => {
           {books.map((book, i) => (
             <li key={book.id}>
               <div className="book-info">
-                {++i}.{books.title} by <strong>{books.author}</strong>
+                {++i}.{book.title} by <strong>{book.author}</strong>
               </div>
               <div className="book-actions">
                 <span onClick={() => handleToggleFavorite(book.id)}>
