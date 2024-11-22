@@ -17,6 +17,7 @@ const BookForm = () => {
     const randomBookWithID = {
       ...randomBook,
       id: uuidv4(),
+      isFavorite: false,
     };
 
     dispatch(addBook(randomBookWithID));
@@ -30,6 +31,7 @@ const BookForm = () => {
         title,
         author,
         id: uuidv4(),
+        isFavorite: false,
       };
       console.log(addBook(book));
       dispatch(addBook(book));
@@ -49,7 +51,7 @@ const BookForm = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-          ></input>
+          />
         </div>
         <div>
           <label htmlFor="author">Title:</label>
@@ -58,7 +60,7 @@ const BookForm = () => {
             id="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-          ></input>
+          />
         </div>
         <button type="submit">Add Book</button>
         <button type="button" onClick={handleAddRandomBook}>
