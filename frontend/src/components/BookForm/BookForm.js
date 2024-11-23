@@ -40,7 +40,7 @@ const BookForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="author">Title:</label>
+          <label htmlFor="author">Author:</label>
           <input
             type="text"
             id="author"
