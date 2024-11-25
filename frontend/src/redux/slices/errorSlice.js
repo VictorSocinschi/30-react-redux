@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = " ";
+const initialState = "";
 
 const errorSlice = createSlice({
   name: "error",
